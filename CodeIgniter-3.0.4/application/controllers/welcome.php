@@ -28,8 +28,9 @@ class Welcome extends CI_Controller {
 
         $data['title'] = 'MVC Cool title';
         $data['page_header'] = 'Intro to MVC design';
-        $data['firstname'] = $this->model_users->getFirstNames();
-//        storing the data array and will be accessible to
+        $data['firstnames'] = $this->model_users->getFirstNames();
+        $data['users'] = $this->model_users->getUsers();
+        $this->load->view('welcome_message', $data);
     }
 }
 
