@@ -28,6 +28,7 @@ class Model_users extends CI_Model {
             return $query->result();
         } else {
             return NULL;
+
         }
     }
 }
