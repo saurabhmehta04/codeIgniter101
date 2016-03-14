@@ -99,7 +99,13 @@
 <div id="container">
     <h2> <?php echo $page_header;?> </h2>
     <div id="body">
+
             <?php
+            echo "This is test";
+
+
+            /*
+
             foreach ($firstnames as $object) {
                 echo $object->firstname . '<br/>';
             }
@@ -107,7 +113,7 @@
 
             foreach ($users as $object) {
                 echo $object->firstname . ' email address is ' . $object->email . '<br/>';
-            }
+            }*/
             ?>
     </div>
     	<p class="footer">Page rendered in <strong>{elapsed_time}</strong> seconds</p>

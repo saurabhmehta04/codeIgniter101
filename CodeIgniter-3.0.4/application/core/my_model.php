@@ -89,7 +89,7 @@ class MY_Model extends CI_Model {
         if ($limit) { //if there is a limit
             $query = $this->db->get($this::DB_TABLE, $limit, $offset); //name of table, optional limit and optional offset
         } else {
-            $query = $this->db->get($this::DB_TABLE);
+            $query = $this->db->get($this::DB_TABLE); // return all rows, if limit is not set
         }
 
 //        building a return value

@@ -24,12 +24,14 @@ class Welcome extends CI_Controller {
 	}
 
     public function home() {
-        $this->load->model('model_users');
+//        $this->load->model('model_users');
 
         $data['title'] = 'MVC Cool title';
         $data['page_header'] = 'Intro to MVC design';
-        $data['firstnames'] = $this->model_users->getFirstNames();
-        $data['users'] = $this->model_users->getUsers();
+//        $data['firstnames'] = $this->model_users->getFirstNames();
+//        $data['users'] = $this->model_users->getUsers();
+        $data['firstnames'] = "firstName";
+        $data['users'] = "users";
         $this->load->view('welcome_message', $data);
     }
 }

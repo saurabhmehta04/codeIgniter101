@@ -7,7 +7,7 @@
  * Time: 3:20 PM
  */
 class Example {
-    function index() {
+    public function index() {
         echo "Example library called";
     }
 }
