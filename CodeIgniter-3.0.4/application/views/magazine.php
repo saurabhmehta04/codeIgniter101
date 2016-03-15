@@ -12,4 +12,11 @@
         <?php echo $issue->issue_date_publication; ?>
     </div>
 
+    <?php if ($issue->issue_cover) { ?>
+       <div class = "cover">
+           <?php echo img('upload/'. $issue->issue_cover); ?>
+
+       </div>
+    <?php } ?>
+
 </div>
